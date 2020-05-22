@@ -1,8 +1,8 @@
 <svelte:options tag="durian-image" />
 
 <script>
-  export let src;
-  export let alt = 'No alt text was provided';
+  export let src = 'Image src not provided';
+  export let alt = 'Alt text not provided';
 </script>
 
 <style>
@@ -10,15 +10,13 @@
     position: relative;
     width: 200px;
     height: 200px;
-    border: 1px solid hotpink;
-    border-radius: 3px;
-    padding: 3em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   }
 
   img {
     height: 100%;
     width: 100%;
-    object-fit: contain;
+    object-fit: cover;
   }
 </style>
 
